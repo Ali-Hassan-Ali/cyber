@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(UsersTableSeeder::class);
         $this->call(ChallengeTableSeeder::class);
+        $this->call(TaskTableSeeder::class);
         // \App\Models\User::factory(10)->create();
     }
 }

@@ -18,11 +18,11 @@ class ChallengeTableSeeder extends Seeder
         foreach ($challenges as $key => $challenge) {
             
             \App\Models\Challenge::create([
-                'name'     => $challenge,
+                'name'        => $challenge,
+                'description' => 'Lorem ipsum dolor sittem ametamngcing elit, per sed do eiusmoad teimpor sittem elit inuning ut sed',
             ]);
 
         }//en dof each
-
 
     }//end of run
     

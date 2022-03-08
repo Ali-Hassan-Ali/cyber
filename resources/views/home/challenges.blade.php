@@ -18,14 +18,14 @@
             	
             	@foreach ($challenges as $challenge)
             		
-	               	<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-		            	<a href="">
+               	<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+		            	<a href="{{ route('challenges.task', $challenge->id) }}">
 		                  <div class="Services-box">  
 		                     <i><img src="{{ $challenge->image_path }}" alt="#" /></i>
 		                     <h3>{{ $challenge->name }}</h3>
 		                  </div>
 		                </a>
-	               	</div>
+               	</div>
 
             	@endforeach
                

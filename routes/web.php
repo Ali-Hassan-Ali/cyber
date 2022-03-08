@@ -17,3 +17,4 @@ use App\Http\Controllers\WelcomController;
 
 Route::get('/', [WelcomController::class,'index'])->name('welcome');
 Route::get('/challenges', [WelcomController::class,'challenges'])->name('challenges');
+Route::get('/challenges/task/{challenges}', [WelcomController::class,'task'])->name('challenges.task');

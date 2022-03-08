@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Challenge;
+use App\Models\Task;
 
 class WelcomController extends Controller
 {
@@ -20,5 +21,13 @@ class WelcomController extends Controller
         return view('home.challenges', compact('challenges'));
 
     }//end of challenges
+
+    public function task(Challenge $challenges)
+    {
+        $tasks = Task::where('challenges_id', $challenges->id)->get();
+        
+        return view('home.task', compact('tasks','challenges'));
+
+    }//end of task
 
 }//end of controller
