@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<class>
+  <student>
+    <name> Hong Cuong Nguyen</name>
+    <birth> 1998 </birth>
+    <school> PTIT </school>
+  </student>
+  <student>
+    <name> Minh Long Vu </name>
+    <birth> 2000 </birth>
+    <school> HUST </school>
+  </student>
+  <student>
+    <name> Do Truong Minh </name>
+    <birth> 1999 </birth>
+    <school> NEU </school>
+  </student>
+  <student>
+    <name> Pham Hoang </name>
+    <birth> 1999 </birth>
+    <school> HUST </school>
+  </student>
+  <student>
+    <name> Trung Quan </name>
+    <birth> 1998 </birth>
+    <school> PTIT </school>
+  </student>
+</class>

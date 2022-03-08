@@ -1,0 +1,32 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+    function load_image_viewer() {
+        if(window.location.hash) {
+            var hash = window.location.hash.substring(1);
+            $('.image-viewer').html('<img src="' + hash + '.jpg" />');
+        } else {
+            $('.image-viewer').html('<p>No image loaded!!</p>');
+        }
+    }
+
+    $( document ).ready(function() {
+        $('.link').click(function() {
+            setTimeout(function() {load_image_viewer(); }, 50);
+        });
+
+        load_image_viewer();
+    });
+</script>
+</head>
+<body>
+    <h1>Image viewer!</h1>
+    <p>This image viewer has three options:</p>
+    <a class='link' href='index.html#dog'>dog</a> | 
+    <a class='link' href='index.html#cat'>cat</a> | 
+    <a class='link' href='index.html#kernel'>the Kernel himself!</a>
+    <br />
+    <div class='image-viewer'></div>
+</body>
+</html>
